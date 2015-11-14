@@ -13,6 +13,7 @@
 		8760CE671BF7C09100D30891 /* LateDBC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8760CE651BF7C09100D30891 /* LateDBC.xcdatamodeld */; };
 		8760CE691BF7C09100D30891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8760CE681BF7C09100D30891 /* Assets.xcassets */; };
 		8760CE6C1BF7C09100D30891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8760CE6A1BF7C09100D30891 /* LaunchScreen.storyboard */; };
+		87A52CBD1BF7FC5800E39F02 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 87A52CBC1BF7FC5800E39F02 /* AppIcon.appiconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8760CE681BF7C09100D30891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8760CE6B1BF7C09100D30891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8760CE6D1BF7C09100D30891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87A52CBC1BF7FC5800E39F02 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = ../../alarmclock/ios/AppIcon.appiconset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				8760CE601BF7C09100D30891 /* ViewController.swift */,
 				8760CE621BF7C09100D30891 /* Main.storyboard */,
 				8760CE681BF7C09100D30891 /* Assets.xcassets */,
+				87A52CBC1BF7FC5800E39F02 /* AppIcon.appiconset */,
 				8760CE6A1BF7C09100D30891 /* LaunchScreen.storyboard */,
 				8760CE6D1BF7C09100D30891 /* Info.plist */,
 				8760CE651BF7C09100D30891 /* LateDBC.xcdatamodeld */,
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A52CBD1BF7FC5800E39F02 /* AppIcon.appiconset in Resources */,
 				8760CE6C1BF7C09100D30891 /* LaunchScreen.storyboard in Resources */,
 				8760CE691BF7C09100D30891 /* Assets.xcassets in Resources */,
 				8760CE641BF7C09100D30891 /* Main.storyboard in Resources */,
@@ -291,6 +295,7 @@
 				8760CE721BF7C09100D30891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

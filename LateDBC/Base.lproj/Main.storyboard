@@ -18,11 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="wha-cC-JTi">
-                                <rect key="frame" x="0.0" y="178" width="320" height="390"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who is late to DBC today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQb-Xx-oC4" userLabel="WhoIsLateLabel">
+                                <rect key="frame" x="32" y="70" width="257" height="45"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.22711743611604729" green="0.61223315675515133" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2fD-in-N8X" userLabel="NameEntryField">
                                 <rect key="frame" x="85" y="123" width="150" height="30"/>
                                 <animations/>
@@ -35,14 +38,11 @@
                                     <action selector="enterNameAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="0Hx-rA-8Kd"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who is late to DBC today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQb-Xx-oC4" userLabel="WhoIsLateLabel">
-                                <rect key="frame" x="32" y="70" width="257" height="45"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="wha-cC-JTi">
+                                <rect key="frame" x="0.0" y="158" width="320" height="390"/>
                                 <animations/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="0.22711743611604729" green="0.61223315675515133" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -50,14 +50,14 @@
                             <constraint firstItem="RQb-Xx-oC4" firstAttribute="centerX" secondItem="2fD-in-N8X" secondAttribute="centerX" id="2Bv-EU-h5p"/>
                             <constraint firstItem="2fD-in-N8X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="123" id="3P5-hs-z5I"/>
                             <constraint firstItem="2fD-in-N8X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="Upy-W3-ZST"/>
-                            <constraint firstItem="wha-cC-JTi" firstAttribute="top" secondItem="2fD-in-N8X" secondAttribute="bottom" constant="25" id="ZOM-eX-W9w"/>
+                            <constraint firstItem="wha-cC-JTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZZW-ey-hSj"/>
                             <constraint firstItem="RQb-Xx-oC4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="dye-zC-clA"/>
                             <constraint firstItem="RQb-Xx-oC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="iaB-9H-2TQ"/>
-                            <constraint firstItem="2fD-in-N8X" firstAttribute="centerX" secondItem="wha-cC-JTi" secondAttribute="centerX" id="l2x-o4-PM8"/>
-                            <constraint firstItem="wha-cC-JTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ntT-76-U6E"/>
                             <constraint firstItem="RQb-Xx-oC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q1x-B7-rL9"/>
                             <constraint firstItem="2fD-in-N8X" firstAttribute="top" secondItem="RQb-Xx-oC4" secondAttribute="bottom" constant="8" symbolic="YES" id="qbd-rU-wYL"/>
-                            <constraint firstItem="wha-cC-JTi" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="wgL-Z4-P96"/>
+                            <constraint firstItem="wha-cC-JTi" firstAttribute="top" secondItem="2fD-in-N8X" secondAttribute="bottom" constant="5" id="sF0-eg-MAu"/>
+                            <constraint firstAttribute="bottom" secondItem="wha-cC-JTi" secondAttribute="bottom" constant="20" symbolic="YES" id="waY-0f-ej7"/>
+                            <constraint firstItem="wha-cC-JTi" firstAttribute="centerX" secondItem="2fD-in-N8X" secondAttribute="centerX" id="x4V-ka-dSS"/>
                         </constraints>
                     </view>
                     <connections>
