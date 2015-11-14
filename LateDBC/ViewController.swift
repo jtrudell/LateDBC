@@ -24,9 +24,9 @@ class ViewController: UIViewController {
 
     @IBAction func enterNameAction(sender: UITextField) {
         if sender.text == "" {
-            sender.text = "Nobody"
+            sender.text = "Eileen"
         }
-        whoLabel.text = sender.text! + " is late again?"
+        whoLabel.text = sender.text! + " is late today!"
     }
 }
 
