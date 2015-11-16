@@ -21,7 +21,10 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who is late to DBC today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQb-Xx-oC4" userLabel="WhoIsLateLabel">
                                 <rect key="frame" x="32" y="70" width="257" height="45"/>
                                 <animations/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="uz1-fZ-gcy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -30,7 +33,7 @@
                                 <rect key="frame" x="85" y="123" width="150" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="H9j-dK-brX"/>
+                                    <constraint firstAttribute="height" constant="30" id="mg2-aJ-II2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -38,35 +41,56 @@
                                     <action selector="enterNameAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="0Hx-rA-8Kd"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="wha-cC-JTi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="wha-cC-JTi" userLabel="AlarmClock">
                                 <rect key="frame" x="0.0" y="158" width="320" height="390"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.22711743611604729" green="0.61223315675515133" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ix-BY-dCA">
+                                <rect key="frame" x="139" y="536" width="42" height="32"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="NFh-yF-jc5"/>
+                                    <constraint firstAttribute="height" constant="32" id="xgz-LF-zEk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmg-bA-nWE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="centerX" secondItem="2fD-in-N8X" secondAttribute="centerX" id="2Bv-EU-h5p"/>
-                            <constraint firstItem="2fD-in-N8X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="123" id="3P5-hs-z5I"/>
-                            <constraint firstItem="2fD-in-N8X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="Upy-W3-ZST"/>
-                            <constraint firstItem="wha-cC-JTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZZW-ey-hSj"/>
-                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="dye-zC-clA"/>
-                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="iaB-9H-2TQ"/>
-                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q1x-B7-rL9"/>
-                            <constraint firstItem="2fD-in-N8X" firstAttribute="top" secondItem="RQb-Xx-oC4" secondAttribute="bottom" constant="8" symbolic="YES" id="qbd-rU-wYL"/>
-                            <constraint firstItem="wha-cC-JTi" firstAttribute="top" secondItem="2fD-in-N8X" secondAttribute="bottom" constant="5" id="sF0-eg-MAu"/>
-                            <constraint firstAttribute="bottom" secondItem="wha-cC-JTi" secondAttribute="bottom" constant="20" symbolic="YES" id="waY-0f-ej7"/>
-                            <constraint firstItem="wha-cC-JTi" firstAttribute="centerX" secondItem="2fD-in-N8X" secondAttribute="centerX" id="x4V-ka-dSS"/>
+                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="0a2-7N-Ius"/>
+                            <constraint firstItem="2fD-in-N8X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="1Em-C5-EOk"/>
+                            <constraint firstItem="wha-cC-JTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3AW-ji-unM"/>
+                            <constraint firstItem="wha-cC-JTi" firstAttribute="top" secondItem="2fD-in-N8X" secondAttribute="bottom" constant="5" id="7gF-Ra-RnC"/>
+                            <constraint firstAttribute="bottom" secondItem="wha-cC-JTi" secondAttribute="bottom" constant="20" symbolic="YES" id="MyP-CO-opG"/>
+                            <constraint firstItem="wha-cC-JTi" firstAttribute="centerX" secondItem="7ix-BY-dCA" secondAttribute="centerX" id="N6R-mE-6ne"/>
+                            <constraint firstItem="7ix-BY-dCA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="XEP-kL-y7y"/>
+                            <constraint firstItem="2fD-in-N8X" firstAttribute="top" secondItem="RQb-Xx-oC4" secondAttribute="bottom" constant="8" symbolic="YES" id="ZaJ-ju-h9q"/>
+                            <constraint firstItem="wha-cC-JTi" firstAttribute="centerX" secondItem="2fD-in-N8X" secondAttribute="centerX" id="aqm-H0-E3c"/>
+                            <constraint firstAttribute="trailing" secondItem="wha-cC-JTi" secondAttribute="trailing" id="nr5-s6-myg"/>
+                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="qUU-WW-MiE"/>
+                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="centerX" secondItem="2fD-in-N8X" secondAttribute="centerX" id="r22-bD-JD9"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="enterNameField" destination="2fD-in-N8X" id="LnW-FU-IUU"/>
+                        <outlet property="resetButton" destination="7ix-BY-dCA" id="Cqo-5e-H4t"/>
                         <outlet property="whoLabel" destination="RQb-Xx-oC4" id="9Sb-p2-mX0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72" y="-160"/>
+            <point key="canvasLocation" x="76" y="-161"/>
         </scene>
     </scenes>
     <resources>

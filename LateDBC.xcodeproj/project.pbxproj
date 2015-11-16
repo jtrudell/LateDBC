@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		873DDD5D1BF95514004DB174 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873DDD5C1BF95514004DB174 /* AVFoundation.framework */; };
+		873E7A0B1BF97DC9009E4368 /* late.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 873E7A0A1BF97DC9009E4368 /* late.mp3 */; };
 		8760CE5F1BF7C09100D30891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760CE5E1BF7C09100D30891 /* AppDelegate.swift */; };
 		8760CE611BF7C09100D30891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760CE601BF7C09100D30891 /* ViewController.swift */; };
 		8760CE641BF7C09100D30891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8760CE621BF7C09100D30891 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		873DDD5C1BF95514004DB174 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		873E7A0A1BF97DC9009E4368 /* late.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = late.mp3; sourceTree = "<group>"; };
 		8760CE5B1BF7C09100D30891 /* LateDBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LateDBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8760CE5E1BF7C09100D30891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8760CE601BF7C09100D30891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873DDD5D1BF95514004DB174 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 		8760CE521BF7C09100D30891 = {
 			isa = PBXGroup;
 			children = (
+				873DDD5C1BF95514004DB174 /* AVFoundation.framework */,
 				8760CE5D1BF7C09100D30891 /* LateDBC */,
 				8760CE5C1BF7C09100D30891 /* Products */,
 			);
@@ -58,6 +64,7 @@
 		8760CE5D1BF7C09100D30891 /* LateDBC */ = {
 			isa = PBXGroup;
 			children = (
+				873E7A0A1BF97DC9009E4368 /* late.mp3 */,
 				8760CE5E1BF7C09100D30891 /* AppDelegate.swift */,
 				8760CE601BF7C09100D30891 /* ViewController.swift */,
 				8760CE621BF7C09100D30891 /* Main.storyboard */,
@@ -96,6 +103,9 @@
 		8760CE531BF7C09100D30891 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Jen Trudell";
@@ -130,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87A52CBD1BF7FC5800E39F02 /* AppIcon.appiconset in Resources */,
+				873E7A0B1BF97DC9009E4368 /* late.mp3 in Resources */,
 				8760CE6C1BF7C09100D30891 /* LaunchScreen.storyboard in Resources */,
 				8760CE691BF7C09100D30891 /* Assets.xcassets in Resources */,
 				8760CE641BF7C09100D30891 /* Main.storyboard in Resources */,
