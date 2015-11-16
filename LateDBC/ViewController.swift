@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     
     // when reset button is pressed, reset top label and text entry field
     @IBAction func resetButtonPressed(sender: AnyObject) {
-        self.whoLabel.text = "Who is late to DBC today?"
+        self.whoLabel.text = "Who is late today?"
         self.enterNameField.text = ""
 
     }

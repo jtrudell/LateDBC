@@ -18,12 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who is late to DBC today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQb-Xx-oC4" userLabel="WhoIsLateLabel">
-                                <rect key="frame" x="32" y="70" width="257" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who is late today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQb-Xx-oC4" userLabel="WhoIsLateLabel">
+                                <rect key="frame" x="31" y="28" width="258" height="87"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="uz1-fZ-gcy"/>
+                                    <constraint firstAttribute="height" constant="87" id="juX-IZ-kcn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,18 +68,18 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="0a2-7N-Ius"/>
                             <constraint firstItem="2fD-in-N8X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="1Em-C5-EOk"/>
                             <constraint firstItem="wha-cC-JTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3AW-ji-unM"/>
                             <constraint firstItem="wha-cC-JTi" firstAttribute="top" secondItem="2fD-in-N8X" secondAttribute="bottom" constant="5" id="7gF-Ra-RnC"/>
+                            <constraint firstItem="2fD-in-N8X" firstAttribute="top" secondItem="RQb-Xx-oC4" secondAttribute="bottom" constant="8" symbolic="YES" id="E5V-fA-XDl"/>
+                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="centerX" secondItem="2fD-in-N8X" secondAttribute="centerX" id="Ehp-Hj-Un9"/>
                             <constraint firstAttribute="bottom" secondItem="wha-cC-JTi" secondAttribute="bottom" constant="20" symbolic="YES" id="MyP-CO-opG"/>
                             <constraint firstItem="wha-cC-JTi" firstAttribute="centerX" secondItem="7ix-BY-dCA" secondAttribute="centerX" id="N6R-mE-6ne"/>
                             <constraint firstItem="7ix-BY-dCA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="XEP-kL-y7y"/>
-                            <constraint firstItem="2fD-in-N8X" firstAttribute="top" secondItem="RQb-Xx-oC4" secondAttribute="bottom" constant="8" symbolic="YES" id="ZaJ-ju-h9q"/>
                             <constraint firstItem="wha-cC-JTi" firstAttribute="centerX" secondItem="2fD-in-N8X" secondAttribute="centerX" id="aqm-H0-E3c"/>
+                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="hgA-Tp-Jhw"/>
+                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="jbO-nS-6ng"/>
                             <constraint firstAttribute="trailing" secondItem="wha-cC-JTi" secondAttribute="trailing" id="nr5-s6-myg"/>
-                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="qUU-WW-MiE"/>
-                            <constraint firstItem="RQb-Xx-oC4" firstAttribute="centerX" secondItem="2fD-in-N8X" secondAttribute="centerX" id="r22-bD-JD9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="-161"/>
+            <point key="canvasLocation" x="205" y="-162"/>
         </scene>
     </scenes>
     <resources>
